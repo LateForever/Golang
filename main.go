@@ -26,7 +26,7 @@ func fibonnaci()  {
 
 	n := big.NewInt(0)
 
-	for i := 0; i < 1000; i++ {
+	for i := 0; i < 10000; i++ {
 
 		n.Add(a, b)
 		a.Set(b)
@@ -42,6 +42,8 @@ func getCircumference(radius float64) float64 {
 
 	return 2 * PI * radius
 }
+
+
 
 var arr = [5]int{1,2,3,4,5}
 var slice = []int{1,2,3,4,5}
@@ -60,6 +62,5 @@ func adder(list []int) []int  {
 
 func main() {
 
-	getName()
-
+	fibonnaci()
 }
