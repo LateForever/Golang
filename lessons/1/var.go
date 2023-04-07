@@ -16,3 +16,11 @@ var (
 	Prefix string
 )
 
+func createArray() {
+	example := [10]int{};
+	memory := [256]uint16{0b0001010100101001, 0b1010101000101001, 0b1110010010001011};
+
+	println(memory);
+	println(example);
+}
+
