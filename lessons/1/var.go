@@ -24,3 +24,15 @@ func createArray() {
 	println(example);
 }
 
+// @SLICE 
+// In many situations, the array type is not a good choice -for instance when we don't know how long the array will be when
+// we define it. Thus, we need a "dynamic array". This is called slice in Go.
+
+var fslice []int;
+
+func createSlice() {
+	slice := []byte{}
+
+	println(slice);
+}
+
