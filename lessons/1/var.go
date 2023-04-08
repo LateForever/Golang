@@ -36,3 +36,13 @@ func createSlice() {
 	println(slice);
 }
 
+// @MAP 
+// map behaves like a dictionary in Python. Use the form map[keyType]valueType to define it.
+
+var numbers map[string] int;
+
+func setMap(key string, value int) {
+	numbers[key] = value;
+}
+
+
