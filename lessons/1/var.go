@@ -45,4 +45,17 @@ func setMap(key string, value int) {
 	numbers[key] = value;
 }
 
+func printExampleMap() {
+	example := map[string]uint8 {"ax0": 00000001, "cx0": 00000010, "dx0": 00000011, "ex0": 00000100}
+	iterators := []string {"ax0", "cx0", "dx0", "ex0"}
+
+	for i := 0; i < len(example); i++ {
+		println(example[iterators[i]])
+	}
+}
+
+
+
+
+
 
