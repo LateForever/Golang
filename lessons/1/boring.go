@@ -30,7 +30,7 @@ func getFavouritePizza(person Person) string {
 
 func init() {
 
-	var pizzeria Pizzeria;
+	pizzeria := Pizzeria{Person{0, "Ricardo", "Garcia", 21, ""}, []string{}};
 	pizzas := map[int8]string {1: "Pepperoni", 2: "Hawaiian", 3: "Meat Lovers", 4: "Veggie Lovers", 5: "Cheese Lovers"};
 
 	for i := 0; i < len(pizzas); i++ {
