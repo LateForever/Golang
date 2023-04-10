@@ -1,4 +1,4 @@
-package lessons1
+package lessons01
 
 // @STRUCT
 // Structs are a collection of fields. They're useful for grouping data together to form records.

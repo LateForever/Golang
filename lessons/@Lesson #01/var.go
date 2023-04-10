@@ -1,4 +1,4 @@
-package lessons1
+package lessons01
 
 // Every go source file belongs to a package
 // The above package declaration must be the first line of code in your Go source file.
