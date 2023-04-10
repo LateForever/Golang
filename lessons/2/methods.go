@@ -52,3 +52,7 @@ func init() {
 	fmt.Println("Area of rectangle1: ", rectangle1.Area());
 	fmt.Println("Area of rectangle2: ", rectangle2.Area());
 }
+
+// One thing that's worth noting is that the method with a dotted line means the receiver is passed by value, not by reference.
+// The difference between them is that a method can change its receiver's values when the receiver is passed by reference,
+// and it gets a copy of the receiver when the receiver is passed by value.
