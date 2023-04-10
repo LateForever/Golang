@@ -88,19 +88,15 @@ func (p *ProductsList) printProductsCategory() {
 
 func init() {
 
-	producstList := ProductsList{};
-
-	product1 := Products{name: "Product 1", price: 10.378912, category: Category{name: "Category 1"}, stars: 5};
-	product2 := Products{name: "Product 2", price: 10.378912, category: Category{name: "Category 2"}, stars: 5};
-	product3 := Products{name: "Product 3", price: 10.378912, category: Category{name: "Category 3"}, stars: 5};
-	product4 := Products{name: "Product 4", price: 10.378912, category: Category{name: "Category 4"}, stars: 5};
-	product5 := Products{name: "Product 5", price: 10.378912, category: Category{name: "Category 5"}, stars: 5};
-
-	producstList.products = append(producstList.products, product1);
-	producstList.products = append(producstList.products, product2);
-	producstList.products = append(producstList.products, product3);
-	producstList.products = append(producstList.products, product4);
-	producstList.products = append(producstList.products, product5);
+	producstList := ProductsList{
+		[]Products{
+			{name: "Product 1", price: 10.378912, category: Category{name: "Category 1"}, stars: 5},
+			{name: "Product 2", price: 10.378912, category: Category{name: "Category 2"}, stars: 5},
+			{name: "Product 3", price: 10.378912, category: Category{name: "Category 3"}, stars: 5},
+			{name: "Product 4", price: 10.378912, category: Category{name: "Category 4"}, stars: 5},
+			{name: "Product 5", price: 10.378912, category: Category{name: "Category 5"}, stars: 5},
+		},
+	};
 
 	producstList.printProducstNames();
 	producstList.printProductsCategory();
