@@ -56,3 +56,34 @@ func init() {
 // One thing that's worth noting is that the method with a dotted line means the receiver is passed by value, not by reference.
 // The difference between them is that a method can change its receiver's values when the receiver is passed by reference,
 // and it gets a copy of the receiver when the receiver is passed by value.
+
+// @Methods with pointer receivers
+// If the struct contains a lots of data then we can use pointer to the struct as a receiver.
+type Products struct {
+	name string
+	price float64
+	category Category
+	stars uint8
+}
+
+type Category struct {
+	name string
+}
+
+type ProductsList struct {
+	products []Products
+}
+
+func (p *ProductsList) printProducstNames()  {
+	for i := 0; i < len(p.products); i++ {
+		fmt.Println(p.products[i].name)
+	}
+}
+
+func (p *ProductsList) printProductsCategory() {
+	for i := 0; i < len(p.products); i++ {
+		fmt.Println(p.products[i].category.name)
+	}
+}
+
+
